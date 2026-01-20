@@ -79,3 +79,10 @@ def undo_redo_manager():
         elif choice == "6":
             break
 undo_redo_manager()
+
+### 
+#In this project, I built custom data structures to solve two different problems. The first one was an undo and redo system. A stack is the best choice for this because it works in a last in, first out way. This makes sense since the most recent action should be the first one undone. When a user does something, it gets added to the undo stack. When undo is pressed, that action is removed from the undo stack and added to the redo stack. If redo is pressed, it moves back to the undo stack. This keeps everything in the correct order.
+
+The second part of the project was a help desk ticket system. For this, I used a queue. A queue works in a first in, first out order, which fits how a help desk should work. The first customer to ask for help should be helped first. New customers are added to the end of the line, and customers are removed from the front when they are helped. This makes the system fair and easy to manage.
+
+These custom data structures are different from Python’s built in lists because they limit how data can be accessed. With lists, you can change or access any position, but stacks and queues only allow certain actions. This helps avoid mistakes and makes the code easier to understand. A real engineer might use a custom stack or queue for things like undo features, support systems, or managing tasks where order really matters.
